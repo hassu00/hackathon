@@ -1,0 +1,33 @@
+"use client"
+import React, { useState } from 'react';
+import Image from 'next/image';
+
+export default function Header() {
+  const [showSearch, setShowSearch] = useState(false);
+
+  return (
+    <div className="grid grid-cols-2 items-center justify-items-center w-full max-w-[1440px] h-[132px] bg-slate-400">
+      <div className="grid grid-rows-1 items-center justify-center w-[1440px] ">
+        <div className=' bg-blue-500 flex justify-between items-center w-[1440px] '>
+        <div className='flex mx-4  gap-1 '>
+        <Image
+          src="/images/Search.svg"
+          alt="search icon"
+          width={16}
+          height={16}
+           className="ml-[20px] cursor-pointer bg-red-500"
+          onClick={() => setShowSearch(!showSearch)}
+          />
+        <input
+          type="text"
+          placeholder="search"
+          className={`w-full p-1 rounded-md ${showSearch ? 'block' : 'hidden'}`}
+        />
+          </div>
+      <div className=" items-center justify-center ">Avion</div>
+      <div className=" items-center justify-center">l</div>
+          </div>
+      </div>
+    </div>
+  );
+}
