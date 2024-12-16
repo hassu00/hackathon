@@ -5,7 +5,7 @@ export default function footer() {
   return (
     <footer className='w-screen h-[380px] grid grid-rows-1 mt-[2850px] bg-[#2A254B]'>
       <div className='flex w-screen flex-col    h-[380px] '>
-    <div className='grid grid-cols-1  h-[300px] '>
+    <div className='grid grid-cols-4  h-[300px] '>
       <div className='flex justify-between gap-[120px]   w-full'>
       <div className='flex-col justify-between items-center  space-y-3 w-[130px] h-[174px] mt-[58px] ml-[58px] '>
         <div className='font-normal text-[16px] leading-[19.6px] text-white'>Menu</div>
@@ -41,8 +41,8 @@ export default function footer() {
       </div>
       </div>
     </div>
-    <div className='grid grid-cols-1 py-5 ml-[65px]'>
-      <div className=' border-t-[1px] border-solid border-[#4E4D93] flex justify-between items-center pt-[40px] w-full '>
+    <div className='grid grid-rows py-5 ml-[65px]'>
+      <div className=' border-t-[1px] border-solid border-[#4E4D93] flex justify-between items-center pt-[40px]  '>
         <p className=' flex  font-normal text-[14px] leading-[18.9px] text-white'>Copyright 2022 Avion LTD</p>
         <div className='flex gap-6 w-[264px] h-6 '>
         <Image

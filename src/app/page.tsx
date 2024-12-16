@@ -1,6 +1,7 @@
 import Header from './component_header/header'
 import Footer from './component_footer/footer'
 import Image from 'next/image'
+// import Link from 'next/link'
 
 export default function Homepage() {
   return (
@@ -21,7 +22,7 @@ export default function Homepage() {
         </div>
 
         <div className='w-screen text-center mt-[1200px] justify-center items-center col-span-1 grid grid-rows-1 lg:grid-cols-3 '>
-          <div className='flex justify-center items-center'>
+          <div className='flex justify-center items-center text-center'>
 
           <p className='font-normal text-center px-3 text-[24px] leading-[33.6px]'>What makes our brand different</p>
           </div>
@@ -29,6 +30,12 @@ export default function Homepage() {
           <div className='bg-green-500'></div>
           <div className='bg-green-500'></div>
         </div>
+        <a href="/product">
+  <button className='bg-green-500 w-28'>
+    login
+  </button>
+</a>
+<a href="/product">Go to Product Page</a>
 
             </div>
         <Footer />
